@@ -17,6 +17,7 @@
             crossorigin="anonymous"
         />
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.typekit.net/wta0qyp.css">
     </head>
 
     <body>
@@ -36,22 +37,22 @@
                     <!--get first name-->
                     <div class="mb-3">
                         <label for="firstName" class="form-label">First Name</label>
-                        <input type="text" class="form-control" id="firstName" placeholder="Enter your first name">
+                        <input type="text" class="form-control" id="firstName" placeholder="Enter your first name" required>
                     </div>
                     <!--get last name-->
                     <div class="mb-3">
                         <label for="lastName" class="form-label">Last Name</label>
-                        <input type="text" class="form-control" id="lastName" placeholder="Enter your last name">
+                        <input type="text" class="form-control" id="lastName" placeholder="Enter your last name" required>
                     </div>
                     <!--get favorite color-->
                     <div class="mb-3">
                         <label for="favoriteColor" class="form-label">Favorite Color</label>
-                        <input type="text" class="form-control" id="favoriteColor" placeholder="Enter your favorite color">
+                        <input type="text" class="form-control" id="favoriteColor" placeholder="Enter your favorite color" required>
                     </div>
                       <!--get favorite animal-->
                       <div class="mb-3">
                         <label for="favoriteAnimal" class="form-label">Favorite Animal</label>
-                        <input type="text" class="form-control" id="favoriteAnimal" placeholder="Enter your favorite animal">
+                        <input type="text" class="form-control" id="favoriteAnimal" placeholder="Enter your favorite animal" required>
                     </div>
                     <!--Get road type-->
                     <div class="mb-3">
@@ -65,9 +66,13 @@
                             <option value="circle">Circle</option>
                             <option value="other">Other</option>
                         </select>
+                        
                     </div>
                     <!--submit button-->
-                    <button type="submit" class="btn btn-primary w-100" onclick="genFullName()">Generate Name</button>
+                    <div type="submit" class="btn  w-100" onclick="genFullName()">Generate Name</div>
+                    <div class="result" id="result">
+                    
+                    </div>
                 </form>
                 <!--generated name output-->
                 <div class="result" id="result">

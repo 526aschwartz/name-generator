@@ -57,9 +57,9 @@ function genFullName(){
     const favoriteAnimal = document.getElementById('favoriteAnimal').value.trim()
     //run name generating functions & store them in new variables 
     const prefix = genPrefix(firstName)
-    const newFirstName = genPrefix(firstName)
-    const middleName = genPrefix(roadType, favoriteColor)
-    const newLastName = genPrefix(lastName)
+    const newFirstName = genFirstName(firstName)
+    const middleName = genMiddleName(roadType, favoriteColor)
+    const newLastName = genLastName(lastName)
     const suffix = genSuffix(favoriteAnimal)
     //capitalize name variables when needed 
     const capitalizePrefix = capitalize(prefix)
@@ -67,8 +67,9 @@ function genFullName(){
     const capitalizeMiddleName = capitalize(middleName)
     const capitalizeLastName = capitalize(newLastName)
     //combine all of the name variables into a full new name
-
+    const fullName = `${capitalizePrefix} ${capitalizeFistName} ${capitalizeMiddleName} ${capitalizeLastName} ${suffix}`
     //display the new name
+    document.getElementById('result').textContent = fullName
 }
 
 //Capitalization function 
