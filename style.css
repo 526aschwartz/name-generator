@@ -5,7 +5,7 @@ body {
 #fantasyForm {
     text-align: center;
     background-color: rgb(176, 125, 204);
-    margin: 80px;
+    margin: 30px;
     padding: 50px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -40,17 +40,18 @@ h1, .result {
 }
 
 p {
-    font-family: "gimlet-display", serif;
     font-size: 30px;
-    font-weight: 400;
-    font-style: italic;
     text-align: center;
+    font-family: "leida", sans-serif;
+    font-weight: 900;
+    font-style: normal;
 }
 
 label {
-    font-family: "gimlet-display", serif;
-    font-size: 30px;
-    font-weight: 400;
+    font-family: "ivystyle-sans", sans-serif;
+    font-weight: 700;
     font-style: italic;
+    margin-top: 20px;
     text-align: center;
+    font-size: 30px;
 }
