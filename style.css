@@ -34,7 +34,8 @@ h1, .result {
     font-family: "ivystyle-sans", sans-serif;
     font-weight: 700;
     font-style: italic;
-    margin-top: 20px;
+    margin-top: 50px;
+    font-size: 35px;
 }
 
 p {
@@ -52,4 +53,8 @@ label {
     margin-top: 20px;
     text-align: center;
     font-size: 30px;
+}
+
+.name {
+    margin-top: 0;
 }

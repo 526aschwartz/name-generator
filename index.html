@@ -35,15 +35,16 @@
                 <!--Form Section-->
                 <form id="fantasyForm" class="mb-4"> 
                     <!--get first name-->
-                    <div class="mb-3">
-                        <label for="firstName" class="form-label">First Name</label>
-                        <input type="text" class="form-control" id="firstName" placeholder="Enter your first name" required>
+                    <div class="row g-5">
+                        <label for="firstName" class="form-label">Your Name</label>
+                        <div class="col name">
+                          <input type="text" class="form-control" placeholder="Enter First name" aria-label="First name" id="firstName">
+                        </div>
+                        <div class="col name">
+                          <input type="text" class="form-control" placeholder="Enter Last name" aria-label="Last name" id="lastName">
+                        </div>
                     </div>
-                    <!--get last name-->
-                    <div class="mb-3">
-                        <label for="lastName" class="form-label">Last Name</label>
-                        <input type="text" class="form-control" id="lastName" placeholder="Enter your last name" required>
-                    </div>
+
                     <!--get favorite color-->
                     <div class="mb-3">
                         <label for="favoriteColor" class="form-label">Favorite Color</label>
@@ -53,6 +54,11 @@
                       <div class="mb-3">
                         <label for="favoriteAnimal" class="form-label">Favorite Animal</label>
                         <input type="text" class="form-control" id="favoriteAnimal" placeholder="Enter your favorite animal" required>
+                    </div>
+                       <!--get favorite show-->
+                       <div class="mb-3">
+                        <label for="favoriteShow" class="form-label">Favorite Show</label>
+                        <input type="text" class="form-control" id="favoriteShow" placeholder="Enter your favorite show" required>
                     </div>
                     <!--Get road type-->
                     <div class="mb-3">
@@ -67,7 +73,8 @@
                             <option value="other">Other</option>
                         </select>
                         
-                    </div>
+                    </div> 
+
                     <!--submit button-->
                     <div type="submit" class="btn  w-100" onclick="genFullName()">Generate Name</div>
                     <div class="result" id="result">
