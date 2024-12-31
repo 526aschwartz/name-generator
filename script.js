@@ -31,16 +31,28 @@ function genMiddleName (roadType, favoriteColor){
 }
 
 //gen last name 
-function genLastName (lastName){
-    const lastLetter = lastName.charAt(lastName.length-1)
-    if (lastLetter === 'a'){
-        return 'Shadow'
-    } else if (lastLetter === 'c'){
-        return 'Blaze'
-    } else {
-        return 'Moon'
-    }
-}
+// function genLastName (lastName){
+//     const lastLetter = lastName.charAt(lastName.length-1)
+//     if (lastLetter === 'a'){
+//         return 'Shadow'
+//     } else if (lastLetter === 'c'){
+//         return 'Blaze'
+//     } else {
+//         return 'Moon'
+//     }
+// }
+
+function genLastName(lastName){ 
+    const lastLetter = lastName.charAt(lastName.length - 1); 
+    return lastLetter === 'a' 
+    ? 'Shadow' 
+    : lastLetter === 'c' 
+    ? 'Blaze' 
+    : lastLetter && lastLetter !== 'a' && lastLetter !== 'c' 
+    ? 'Moon' 
+    : 'Moon'; 
+ }
+
 
 //gen suffix 
 function genSuffix(favoriteAnimal){
